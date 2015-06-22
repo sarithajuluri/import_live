@@ -1,0 +1,9 @@
+en:
+  hello: "Hallo Wereld"
+  products:
+  	attributes:
+  		name: naam
+  		price: prijs
+  		language: taal
+    show:
+      title: "productomschrijving"
