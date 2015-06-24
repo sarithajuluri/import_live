@@ -1,0 +1,9 @@
+wb = xlsx_package.workbook
+if !(@products.nil?)
+	wb.add_worksheet(name: @products.last.name.truncate(31)) do |sheet|
+			sheet.add_row ["SNO", "NAME", "PRICE"]
+			@products.each_with_index do |option, i|
+					sheet.add_row [i+1, option.name, option.price]
+			end
+	end
+end

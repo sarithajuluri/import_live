@@ -32,6 +32,11 @@ gem 'protected_attributes'
 gem 'sweet-alert-confirm'
 
 
+#EXPORT AXLSX
+gem 'axlsx'
+gem 'axlsx_rails', "~> 0.1.5"
+gem 'rubyzip',  "~> 0.9.9"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

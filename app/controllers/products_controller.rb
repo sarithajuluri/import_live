@@ -13,6 +13,7 @@ class ProductsController < ApplicationController
       format.xls {
         response.headers['Content-Disposition'] = "attachment; filename=\"#{controller_name.classify}.xls\""
       }
+      format.xlsx { render xlsx: 'download',filename: "#{controller_name.classify}.xlsx" }
     end
   end
 
