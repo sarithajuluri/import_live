@@ -10,7 +10,8 @@ use_bundler = File.file? 'Gemfile'
 rake_cmd    = use_bundler ? 'bundle exec rake' : 'rake'
 
 if use_bundler
-  bundler_args = ['--deployment']
+  # bundler_args = ['--deployment']
+  bundler_args = ['']
   BUNDLE_WITHOUT = ENV['BUNDLE_WITHOUT'] || 'development:test'
   bundler_args << '--without' << BUNDLE_WITHOUT unless BUNDLE_WITHOUT.empty?
 
