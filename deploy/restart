@@ -4,5 +4,5 @@ echo "restarting Passenger app"
 RAILS_ENV=production rake assets:precompile
 kill $(cat tmp/pids/server.pid)
 rm tmp/pids/server.pid
-bundle exec rails s -e production -p 8080 -d
+bundle exec rails s -e production -p 3000 -d
 service apache2 restart
