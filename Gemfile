@@ -31,6 +31,9 @@ gem 'roo'
 gem 'protected_attributes'
 #sweet alert confirmation
 gem 'sweet-alert-confirm'
+
+#deployment gem testsing
+gem 'git-deploy'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
