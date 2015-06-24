@@ -1,7 +1,7 @@
 require 'roo'
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  before_action :set_language, only: [:show, :edit, :update]
+  # before_action :set_language, only: [:show, :edit, :update]
 
   # GET /products
   # GET /products.json
@@ -85,7 +85,7 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:name, :price, :language)
     end
 
-    def set_language
-      I18n.locale = Product.find(params[:id]).language
-    end
+    # def set_language
+    #   I18n.locale = Product.find(params[:id]).language
+    # end
 end
