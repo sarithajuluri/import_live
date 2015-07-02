@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  #devise_for :users
+  devise_for :users, path: :profile, :controllers => {sessions: "users/sessions", registrations: "users/registrations"}
   resources :products do
     collection { post :import }
   end

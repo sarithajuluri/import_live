@@ -1,0 +1,59 @@
+body {
+	background: #442245 !important;
+}
+
+.login-form {
+	margin-top: 250px;;
+	background: #F2F2F2;
+
+	h1 {
+		padding: 10px 14px;
+		background: #6D4A70;
+		text-align: left;
+		color: #FAFFFF;
+	}
+
+	.checkbox {
+		text-align: left;
+		padding: 0px 20px;
+		.shared-links a {
+			padding-left: 121px;
+			color: #B1B5C1;
+		}
+
+		.shared-links a:hover { 
+			background-color: #F2F2F2;
+		}
+	}
+
+	.form-body {
+		padding: 10px 20px;
+		.text-tab {
+			background: #F0EEF1;
+			height: 45px !important;
+		}
+		.text-user-icon {
+			background: image-url('user-icon.png') no-repeat right;
+			background-size: 48px 40px;
+		}
+
+		.txt-password-icon {
+			background: image-url('password.png') no-repeat right;
+			background-size: 48px 40px;
+		}
+		.login-checkbox {
+			width: 20px;
+			height: 30px; 
+		}
+		.user_remember_me {
+			line-height: 39px;
+		}
+		.login-btn {
+			color: #FEFFEA;
+			background-color: #6C4A6F;
+			width: 113px;
+			margin-top: 15px;
+		}
+
+	}
+}
